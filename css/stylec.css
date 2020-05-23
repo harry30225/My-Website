@@ -1,0 +1,181 @@
+@keyframes rotate {
+    0% {
+       transform: translateX(-50%) translateY(-50%) rotate(0deg);
+       }
+    100% {
+        transform: translateX(-50%) translateY(-50%) rotate(360deg);
+    }   
+}
+@-webkit-keyframes rotate {
+  0% {
+     transform: translateX(-50%) translateY(-50%) rotate(0deg);
+     }
+  100% {
+      transform: translateX(-50%) translateY(-50%) rotate(360deg);
+  }   
+}
+@-moz-keyframes rotate {
+  0% {
+     transform: translateX(-50%) translateY(-50%) rotate(0deg);
+     }
+  100% {
+      transform: translateX(-50%) translateY(-50%) rotate(360deg);
+  }   
+}
+@-o-keyframes rotate {
+  0% {
+     transform: translateX(-50%) translateY(-50%) rotate(0deg);
+     }
+  100% {
+      transform: translateX(-50%) translateY(-50%) rotate(360deg);
+  }   
+}
+*, html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    font-family: helvetica, arial, sans-serif;
+    background-color: #2e2e31;
+}
+
+.Entertag {
+    color: #fffbf1;
+    text-shadow: 0 20px 25px #2e2e31, 0 40px 60px #2e2e31;
+    font-size: 5vw;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: 'Permanent Marker', cursive;
+    letter-spacing: -3px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    
+  }
+  
+  .Entertag:before,.Entertag:after {
+    content: '';
+    padding: .9em .4em;
+    position: absolute;
+    left: 50%;
+    width: 100%;
+    top: 50%;
+    display: block;
+    border: 15px solid red;
+    transform: translateX(-50%) translateY(-50%) rotate(0deg);
+    animation: 10s infinite alternate ease-in-out rotate;
+    
+  }
+  
+  .Entertag:before {
+    border-color: #d9524a #d9524a rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
+    z-index: -1;
+    
+  }
+  
+  .Entertag:after {
+    border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #d9524a #d9524a;
+    box-shadow: 25px 25px 25px rgba(46, 46, 49, .8);
+    
+  }
+  .GitHub {
+     height: calc(150px + 2.5vw);
+     width: calc(150px + 2.5vw);
+     margin-top: 3vw;
+     margin-left: 3vw;
+     position: fixed;
+  }
+  .linkedin {
+  
+    height: calc(150px + 2.5vw);
+     width: calc(150px + 2.5vw);
+     margin-top: 3vw;
+     margin-left: 75vw;
+     position: fixed;
+  }
+  .facebook {
+    height: calc(150px + 2.5vw);
+     width: calc(150px + 2.5vw);
+     margin-top: 72vh;
+     margin-left: 3vw;
+     position: fixed;
+  }
+  .instagram {
+    height: calc(150px + 2.5vw);
+     width: calc(150px + 2.5vw);
+     margin-top: 72vh;
+     margin-left: 75vw;
+     position: fixed;
+  }
+  /*Navigation bar*/
+  .navigationbarinres{
+    display: none;
+  }
+  .navigationbar {
+    position: fixed;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: #2e2e31;
+    width: 100%;
+   /* border: 1px solid snow;*/
+    /*margin-right: 78vw;*/
+  }
+
+  .navigationbar_item {
+    float: right;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  .navigationbar_item a {
+    display: block;
+    padding : 0.72vw 0.82vw;
+    text-align: center;
+    text-decoration: none;
+    color: #f2f542;
+  }
+  .navigationbar_item a:hover{
+    background-color: #798279;
+  }
+
+  @media screen and (max-width: 700px) {
+      .linkedin {
+        margin-left: 56vw;
+      }
+      .instagram{
+        margin-left: 56vw;
+      }
+      .navigationbar{
+        display: none;
+      }
+      .navigationbarinres{
+        display: contents;
+        position: fixed;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background: #2e2e31;
+        width: 100%;
+      }
+      .navigationbarinres_item{
+         float: right;
+      }
+      .navigationbarinres_item a{
+         display: block;
+         padding : 0.72vw 0.82vw;
+         text-align: center;
+         text-decoration: none;
+         color: #f2f542;
+      }
+      .navigationbarinres_item a:hover{
+       background-color: #798279;
+     }
+     .navigationbarinres_item_images{
+       color:  #f2f542;
+     }
+  }
+  

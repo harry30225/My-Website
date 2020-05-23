@@ -1,0 +1,121 @@
+*, html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #2e2e31;
+}
+
+ /*Navigation bar*/
+ .navigationbarinres{
+    display: none;
+  }
+  .navigationbar {
+    position: fixed;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: #2e2e31;
+    width: 100%;
+   /* border: 1px solid snow;*/
+    /*margin-right: 78vw;*/
+  }
+
+  .navigationbar_item {
+    float: right;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  .navigationbar_item a {
+    display: block;
+    padding : 0.72vw 0.82vw;
+    text-align: center;
+    text-decoration: none;
+    color: #f2f542;
+  }
+  .navigationbar_item a:hover{
+    background-color: #798279;
+  }
+
+  .heading {
+      color: #eff781;
+      font-size: 5vw;
+      text-decoration: solid;
+      font-family: 'Orbitron', sans-serif;
+  }
+
+  .qualityform, .photogallery, .visitcounter {
+    height: 5vw;
+    width: 35vw;
+    margin-top: 3vw;
+    margin-bottom: 2vw;
+    margin-left: 29vw;
+    background: #0cf5e9;
+  }
+  .qualityform_text, .photogallery_text, .visitcounter_text {
+    margin-top: 0vw;
+    font-size: 3vw;
+    text-align: center;
+    font-family: 'Special Elite', cursive;
+      
+  }
+  .qualityform_text span, .photogallery_text span, .visitcounter_text span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  .qualityform:hover, .photogallery:hover, .visitcounter:hover {
+    background: #841cc9;
+  }
+
+  .qualityform_text span:before, .photogallery_text span:before, .visitcounter_text span:before {
+     content: '\002F''\002F';
+     position: absolute;
+     top: 0;
+     opacity: 0;
+     left: -1.55vw;
+     transition: 0.5s;
+  }
+
+  .qualityform_text:hover span, .photogallery_text:hover span, .visitcounter_text:hover span {
+    padding-left: 2.55vw;
+  }
+
+  .qualityform_text:hover span:before, .photogallery_text:hover span:before, .visitcounter_text:hover span:before {
+    opacity: 1;
+    left : 0;
+  }
+  
+  @media screen and (max-width: 600px) {
+     .navigationbar{
+       display: none;
+     }
+     .navigationbarinres{
+       display: contents;
+       position: fixed;
+       list-style-type: none;
+       margin: 0;
+       padding: 0;
+       overflow: hidden;
+       background: #2e2e31;
+       width: 100%;
+     }
+     .navigationbarinres_item{
+        float: right;
+     }
+     .navigationbarinres_item a{
+        display: block;
+        padding : 0.72vw 0.82vw;
+        text-align: center;
+        text-decoration: none;
+        color: #f2f542;
+     }
+     .navigationbarinres_item a:hover{
+      background-color: #798279;
+    }
+    .navigationbarinres_item_images{
+      color:  #f2f542;
+    }
+  }

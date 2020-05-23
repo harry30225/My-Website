@@ -1,0 +1,112 @@
+*, html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    background-color: #2e2e31;
+}
+.about {
+    color: #080fc9;
+    font-size: 7vw;
+    font-family:'Bowlby One SC', cursive;
+  
+}
+.about:hover {
+     color: #fffbf1;
+}
+.exc {
+    color: #0aeef2;
+  
+}
+.Myself{
+    color: #fffbf1;
+    font-size: 3vw;
+    font-family: 'Acme', sans-serif;
+   
+}
+.GoldenTemple {
+    width : 40vw;
+    height: 50vh;
+    float: left;
+}
+.quote {
+    color: blueviolet;
+    font-size: 5vw;
+    font-family: 'Zhi Mang Xing', cursive;
+    
+}
+.owner {
+    color: #fffbf1;
+    font-size: 5vw;
+    font-family: 'Acme', sans-serif;
+    
+}
+/*Navigation bar*/
+.navigationbarinres{
+  display: none;
+}
+.navigationbar {
+  position: fixed;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: #2e2e31;
+  width: 100%;
+ /* border: 1px solid snow;*/
+  /*margin-right: 78vw;*/
+}
+
+.navigationbar_item {
+  float: right;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.navigationbar_item a {
+  display: block;
+  padding : 0.72vw 0.82vw;
+  text-align: center;
+  text-decoration: none;
+  color: #f2f542;
+}
+.navigationbar_item a:hover{
+  background-color: #798279;
+}
+
+@media screen and (max-width:900px){
+    .GoldenTemple{
+        float: none;
+        width : 100%;
+        height: 70vh;
+        
+    }
+    .navigationbar{
+      display: none;
+    }
+    .navigationbarinres{
+      display: contents;
+      position: fixed;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background: #2e2e31;
+      width: 100%;
+    }
+    .navigationbarinres_item{
+       float: right;
+    }
+    .navigationbarinres_item a{
+       display: block;
+       padding : 0.72vw 0.82vw;
+       text-align: center;
+       text-decoration: none;
+       color: #f2f542;
+    }
+    .navigationbarinres_item a:hover{
+     background-color: #798279;
+   }
+   .navigationbarinres_item_images{
+     color:  #f2f542;
+   }
+}
